@@ -1,9 +1,62 @@
 
 #include <iostream>
+#include <vector>
 using namespace std;
+
+class GradeTracker {
+private:
+    vector<double> grades;
+
+public:
+    void addGrade() {
+        double grade;
+
+        cout << "Enter a grade from 0 to 100: ";
+        cin >> grade;
+
+        if (grade >= 0 && grade <= 100) {
+            grades.push_back(grade);
+            cout << "Grade added!" << endl;
+        }
+        else {
+            cout << "Invalid grade." << endl;
+        }
+    }
+
+    void viewGrades() {
+        if (grades.empty()) {
+            cout << "No grades have been entered yet." << endl;
+        }
+        else {
+            cout << "\nYour grades:" << endl;
+
+            for (int i = 0; i < grades.size(); i++) {
+                cout << grades[i] << endl;
+            }
+        }
+    }
+
+    void calculateAverage() {
+        if (grades.empty()) {
+            cout << "No grades have been entered yet." << endl;
+        }
+        else {
+            double total = 0;
+
+            for (int i = 0; i < grades.size(); i++) {
+                total = total + grades[i];
+            }
+
+            double average = total / grades.size();
+
+            cout << "Your average is: " << average << endl;
+        }
+    }
+};
 
 int main() {
     int choice = 0;
+    GradeTracker tracker;
 
     while (choice != 4) {
         cout << "\n=== Student Grade Tracker ===" << endl;
@@ -15,13 +68,13 @@ int main() {
         cin >> choice;
 
         if (choice == 1) {
-            cout << "You selected Add a grade." << endl;
+            tracker.addGrade();
         }
         else if (choice == 2) {
-            cout << "You selected View all grades." << endl;
+            tracker.viewGrades();
         }
         else if (choice == 3) {
-            cout << "You selected Calculate average." << endl;
+            tracker.calculateAverage();
         }
         else if (choice == 4) {
             cout << "Goodbye!" << endl;
