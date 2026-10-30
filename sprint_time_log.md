@@ -32,10 +32,10 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |  10/26/26  |  3 PM  |  IM  |    Implemented average calculator   |   120  |
 |   10/28/26 |  2PM  |  IM |     Debugged Menu and had grade tracker working |  60 |
 |   10/29/26   | 3PM  |  IM |   convreted all numbers into readable letter grades   |  120  |
-|   10/24/26  |  1PM  | TP   |                                            |   60   |
-|  10/26/26  |  5 PM   |  TP   |                                            |      60    |
-|   10/27/26 |   6 PM    |  TP  |                                            |    60    |
-|  10/28/26  |   6 PM   |  TP |                                            |    60    |
+|   10/24/26  |  1PM  | TP   |     Wrote Start of Budget CLass      |   60   |
+|  10/26/26  |  5 PM   |  TP   |     debugged HTML    |      60    |
+|   10/27/26 |   6 PM    |  TP  |    worked on getting HTML to work |    60    |
+|  10/28/26  |   6 PM   |  TP |    started tracker class    |    60    |
 |  10/20/26  |  10:15|  MTG   |  Module Planning Meeting | 60 |
 |  10/23/26  |  10:15|  MTG   |  Team Stand up Meeting | 60 |
 |  10/28/26  |  10:15|  MTG   |  Team Print Presentation Meeting | 60 |
