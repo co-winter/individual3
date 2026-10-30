@@ -10,6 +10,7 @@ private:
 public:
     void addGrade() {
         double grade;
+        
 
         cout << "Enter a grade from 0 to 100: ";
         cin >> grade;
